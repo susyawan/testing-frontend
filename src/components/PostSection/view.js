@@ -51,6 +51,7 @@ function PostSection() {
             className="form-control"
             onChange={(e) => setTitle(e.target.value)}
             placeholder="Title"
+            data-testid="Title"
           />
         </div>
         <div className="form-group">
@@ -72,7 +73,7 @@ function PostSection() {
         </button>
         <div className="alert alert-primary mt-2" role="alert">
           <span>{`Title: ${title}`}</span>
-          <br/>
+          <br />
           <span>{`Description: ${description}`}</span>
         </div>
         {postResult && (
